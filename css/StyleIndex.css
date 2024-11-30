@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+
+#vtnModal-compra{
+    position: fixed;
+    z-index: 40;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: #0000003d 0px 3px 8px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,200%);
+    width: 45%;
+    transition: all 0.5s ease-in-out;
+}
+
+.titulo-Modal-compra{
+    font-size: 24px;
+    font-weight:inherit;
+}
+
+.container-sprite{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-pedido{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0%;
+    font-weight: lighter;
+}
+
+#btnModalCompra{
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: #EE7828;
+    color: #FFFCF2;
+}
+
+#btnModalCompra:hover{
+    background: #ea9a65;
+}
+
+#sprite{
+    margin-left: 1em;
+    width: 242px;
+    height: 240px;
+    background: url(../img/SpritesheetHamburguesa2.png);
+    animation: correr 0.6s steps(4) infinite;
+    animation-play-state:running;
+}
+
+@keyframes correr{
+    0%{
+        background-position-x: 0px;
+    }
+
+    100%{
+        /*Anchura de la imagen*/
+        background-position-x: 969px;
+    }
+}
+
+.content-vtnModal-compra{
+    margin-top: 1em;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #252422;
+    width: 100%;
+    padding: 0.4% 10%;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 50;
+}
+
+#option-extra-close{
+    display: none;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+}
+
+#inputMenuMovil{
+    display: none;
+}
+
+.list-options-menu{
+    display: flex;
+    gap:3em;
+}
+
+.list-options-menu a{
+    color: #FFFCF2;
+}
+
+.list-options-menu a:hover{
+    color: #EE7828;
+}
+
+.btn-inicio{
+    padding: 1% 2%;
+    margin-right: 0.7%;
+    border-radius: 5px;
+    background: #eb5e28;
+    color: #FFFCF2;
+}
+
+.btn-inicio a{
+    color: #FFFCF2;
+}
+
+.btn-inicio:hover{
+    background: #EE7828;
+    cursor: pointer;
+}
+
+.Presentacion{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.Presentacion img{
+    width: 100%;
+    height: 100%;
+}
+
+.TextPresentation{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #FFFCF2;
+    font-size: 54px;
+}
+
+.text-presentation-description{
+    margin-top: 1em;
+    font-size: 20px;
+    font-family: "Playwrite AU TAS", cursive;
+}
+
+.content-container{
+    width: 100%;
+    background: #FFFCF2;
+    padding: 0% 10%;
+}
+
+.section-card-container-1{
+    background-color: white;
+    margin: 3em 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container-1{
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    transition: 0.7ms ease-in;
+}
+
+.card-container-1:hover{
+    scale: 1.02;
+}
+
+.btn-add-buy{
+    position: absolute;
+    top: 42%;
+    left: 85%;
+    border-radius: 50px;
+    scale: 1.3;
+    background-color: #EE7828;
+    padding: 1.5%;
+    color: white;
+}
+
+.section-img-card{
+    max-width: 100%;
+    height: 200px;
+    
+}
+
+.section-img-card img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0.5%;
+}
+
+.section-content-card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4%;
+}
+
+.price-pedido{
+    font-size: 18px;
+}
+.name-pedido{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description-pedido{
+    font-size: 13px;
+}
+
+.btnCompra{
+    width: 35%;
+    padding: 3% 0%;
+    border-radius: 5px;
+    background: #eb5e28;
+    color: white;
+    margin: 1em 0%;
+    transition: background 0.3s ease;
+}
+
+.btnCompra:hover{
+    cursor: pointer;
+    background: #ea9a65;
+}
+
+.footer{
+    background-color: #252422;
+    padding: 0% 10.7%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:450px;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgfooter-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imgfooter-background img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-header{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+.container-footer-content{
+    border-radius: 3px;
+    width: 60%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    color: #FFFCF2;
+    padding: 2% 0%;
+}
+
+.titulo-footer{
+    letter-spacing: 2px; 
+}
+
+.bold-subtitulos-footer{
+    font-weight: bold;
+}
+
+.contactos{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column; 
+    gap: 1em;
+}
+
+.contactos a{
+    font-size: 12px;
+    color: #FFFCF2;
+    border-radius: 50px;
+    text-shadow: #ea9a65;
+}
+.contactos a:hover{
+    color: #eb5e28;
+}
+
+.horarios-atencion{
+    display: flex;
+}
+
+.redes{
+    display: flex;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row; 
+    gap: 1em;
+}
+
+.redes a{
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    color: #FFFCF2;
+}
+
+.redes a:hover{
+    color: #eb5e28;
+}
+
+.msj-demostracion{
+    font-style: italic;
+    font-size: 16px;
+}
+.msj-demostracion a{
+    text-decoration:underline;
+    color: #eb5e28;
+}
+
+@media (width<750px){
+
+    .section-card-container-1{  
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .list-options-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:99;
+        background: #252422;
+        height: 100vh;
+        gap: 0px;
+        width: 90%;
+    }
+
+    .list-options-menu a{
+        color:#FFFCF2;
+        padding: 5% 6%;
+        box-shadow:#252422 0px 5px 17px 2px;    
+    }
+
+    #option-extra-close{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color:#FFFCF2;
+        padding: 5% 6%
+    }
+    .btn-inicio{
+        padding: 2.5% 6%;
+        font-size: 15px;
+        margin-right:3% ;
+    }
+
+    #inputMenuMovil:checked ~ .list-options-menu{
+        display: flex;
+    }
+
+    .Presentacion{
+        height: 300px;
+    }
+
+    .container-footer-content{
+        flex-direction: column;
+    }
+
+    .contactos{
+        flex-direction: row;
+    }
+
+    #vtnModal-compra{
+        width: 79%;
+    }
+}
+
