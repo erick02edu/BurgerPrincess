@@ -9,3 +9,10 @@ Tecnologias usadas : <div style="page-break-after: always;"></div>
   <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
 </div>
 
+## Vista previa:
+<div style="display:flex; justify-content:center; align-items:center;">
+  <img width="300" height="530" src="assets/img/BurgerPrincessView1.jpg" alt="html-5"/> 
+  <img width="400" height="530" src="assets/img/BurgerPrincessView2.jpg" alt="html-5"/> 
+</div>
+
+
